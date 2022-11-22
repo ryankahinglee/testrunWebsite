@@ -1,3 +1,16 @@
+# Author: Ryan Lee
+# Start of creation: 21/11/2022
+# Overview
+
+
+
+# Packages used
+Shopify/Draggable
+npm install @shopify/draggable --save
+
+Uninstall via:
+npm uninstall @shopify/draggable --save
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

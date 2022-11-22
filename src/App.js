@@ -1,32 +1,32 @@
 import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Home from './sections/Home';
 
 function App() {
   return (
-    <body>
-      <header class='header'>
-        <p>Hi</p>
-      </header>
-      <section class='home'>
-      </section>
-      <section class='about'>
-        <h2 class='section-heading'>
+    <div>      
+      <Header />
+      <Home />
+      <section className='about'>
+        <h2 className='section-heading'>
           About
         </h2>
       </section>
-      <section class='projects'>
-        <h2 class='section-heading'>
+      <section className='projects'>
+        <h2 className='section-heading'>
           Projects
         </h2>
       </section>
-      <section class='contact'>
-        <h2 class='section-heading'>
+      <section className='contact'>
+        <h2 className='section-heading'>
           Contact
         </h2>
       </section>
       <footer>
 
       </footer>
-    </body>
+    </div>
   );
 }
 
