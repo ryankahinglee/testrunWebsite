@@ -69,7 +69,7 @@ body {
   font-size: 20px;
 }
 
-.neonText {
+.neon-pink {
   color: #fff;
   text-shadow:
     0 0 7px #fff,
@@ -81,15 +81,16 @@ body {
     0 0 151px #FE8DFF;
 }
 
-.home {
+.home-background {
   background-color: black;
   height: 80vh;
-  padding-top: 10rem;  
+  padding-top: 10rem; 
+}
+.home-container { 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 .home-cubes {
   display: flex;
@@ -103,6 +104,9 @@ body {
   color: white;
   font-size: 80px;
   width: 60vw;
+}
+
+.neon-green {
   text-shadow:
     0 0 7px #fff,
     0 0 10px #8eff8d,
@@ -120,15 +124,32 @@ body {
 .hidden {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 2s, opacity 2s linear;
+  transition: visibility 0s 1s, opacity 1s linear;
 }
 
-.flicker-slow{
+.visible {
+  animation: fade-in 1.5s;
+}
+
+.visible-slow {
+  animation: fade-in 2.5s;
+}
+
+.flicker-slow {
   animation: flicker 3s linear infinite;
 }
 
-.flicker-slower{
-  animation: flicker 10s linear infinite;
+.flicker-slower {
+  animation: flicker 7s linear infinite;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes flicker {

@@ -3,8 +3,8 @@ import Cube from '../components/Cube'
 import { Swappable } from '@shopify/draggable';
 
 export default function Home () {
-  const [correct, setCorrect] = React.useState(false);
-  console.log(correct);
+  const [isCorrect, setCorrect] = React.useState(false);
+  console.log(isCorrect);
   React.useEffect(() => {
     const swappable = new Swappable(document.querySelectorAll('div'), {
       draggable: '.cube-three-side'
@@ -17,45 +17,60 @@ export default function Home () {
       swappable.destroy();
     }
   }, []);
+
+  const hiddenError = function() {
+    const error = document.querySelector(".home-error")
+    error.classList.add('hidden');
+  }
+
+  const cubeCheck = function() {
+    const cubes = document.querySelectorAll(".home-cube");
+    const tops = [];
+    cubes.forEach((cube) => {
+      tops.push(cube.querySelectorAll("div")[2]);
+    })
+    let name = 'RYAN ';
+    tops.forEach((top) => {
+      if (name.length === 0) {
+        setCorrect(true);
+      } else if (top.textContent === name.slice(0,1)) {
+        name = name.slice(1);
+      } else {
+        return;
+      }
+    })
+  }
   return (
-    <div className='home'>
-      <div className='home-greet flicker-slow' style={{fontSize: '160px'}}>
-        Hi,
-      </div>
-      <div className='home-greet flicker-slower'>
-        my name is
-      </div>
-      <div className='home-cubes' 
-        onMouseDown={() => {
-          const error = document.querySelector(".home-error")
-          error.classList.add('hidden');
-        }}
-        onMouseUp={() => {
-          const cubes = document.querySelectorAll(".home-cube");
-          const tops = [];
-          cubes.forEach((cube) => {
-            tops.push(cube.querySelectorAll("div")[2]);
-          })
-          let name = 'RYAN ';
-          tops.forEach((top) => {
-            if (name.length === 0) {
-              setCorrect(true);
-            } else if (top.textContent === name.slice(0,1)) {
-              name = name.slice(1);
-            } else {
-              return;
-            }
-          })
-        }}
-      >
-        <Cube front='K' side='A' top='R'/>
-        <Cube front='H' side='I' top='Y'/>
-        <Cube front='N' side='G' top='A'/>
-        <Cube front='E' side='E' top=' '/>
-        <Cube front=' ' side='L' top='N'/>
-      </div>
-      <div className='home-greet home-error' style={{fontSize: '50px'}}>
-        Oh no, my name is spelt wrong! Can you swap the last two cubes around?
+    <div className='home-background'>
+      <div className='home-container visible-slow'>
+        <div className='home-greet neon-green flicker-slow' style={{fontSize: '160px'}}>
+          Hi,
+        </div>
+        <div className='home-greet neon-green flicker-slower'>
+          my name is
+        </div>
+        <div className='home-cubes' 
+          onMouseDown={hiddenError}
+          onTouchStart={hiddenError}
+          onMouseUp={cubeCheck}
+          onTouchEnd={cubeCheck}
+        >
+          <Cube front='K' side='A' top='R'/>
+          <Cube front='H' side='I' top='Y'/>
+          <Cube front='N' side='G' top='A'/>
+          <Cube front='E' side='E' top=' '/>
+          <Cube front=' ' side='L' top='N'/>
+        </div>
+        {!isCorrect && (
+          <div className='home-greet neon-green home-error' style={{fontSize: '50px'}}>
+            Oh no, my name is spelt wrong! Can you swap the last two cubes around?
+          </div>  
+        )}
+        {isCorrect && (
+          <div className='home-greet visible neon-pink' style={{ width: '60vw' }}>
+            Frontend Developer and Backend Engineer
+          </div>
+        )}
       </div>
     </div>
   )

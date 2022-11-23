@@ -3,7 +3,7 @@ export default function Cube (props) {
   return (
     <div>
       <div className='cube-three-side home-cube' style={{ height: '235px', width: '222px', position: 'relative', margin: '11px 0 0 0'}}>
-        <div className='face face-front neonText'
+        <div className='face face-front neon-pink'
           style={{
             position: 'absolute',
             left: '0%',
@@ -23,7 +23,7 @@ export default function Cube (props) {
           }}
         >{props.front}
         </div>
-        <div className='face face-side neonText'
+        <div className='face face-side neon-pink'
           style={{
             position: 'absolute',
             left: '50%',
@@ -43,7 +43,7 @@ export default function Cube (props) {
           }}
         >{props.side}
         </div>
-        <div className='face face-top neonText'
+        <div className='face face-top neon-pink'
           style={{
             position: 'absolute',
             left: '14%',
