@@ -20,7 +20,9 @@ export default function Home () {
 
   const hiddenError = function() {
     const error = document.querySelector(".home-error")
-    error.classList.add('hidden');
+    if (error !== null) {
+      error.classList.add('hidden');
+    }
   }
 
   const cubeCheck = function() {
@@ -29,19 +31,20 @@ export default function Home () {
     cubes.forEach((cube) => {
       tops.push(cube.querySelectorAll("div")[2]);
     })
-    let name = 'RYAN ';
+    let name = '';
     tops.forEach((top) => {
-      if (name.length === 0) {
-        setCorrect(true);
-      } else if (top.textContent === name.slice(0,1)) {
-        name = name.slice(1);
-      } else {
-        return;
+      if (!name.includes(top.textContent)) {
+        name += top.textContent;
       }
-    })
+    });
+
+    console.log(name);
+    if (name ==='RYAN ') {
+      setCorrect(true);
+    }
   }
   return (
-    <div className='home-background'>
+    <section className='home-background'>
       <div className='home-container visible-slow'>
         <div className='home-greet neon-green flicker-slow' style={{fontSize: '160px'}}>
           Hi,
@@ -72,6 +75,6 @@ export default function Home () {
           </div>
         )}
       </div>
-    </div>
+    </section>
   )
 }

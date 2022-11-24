@@ -2,17 +2,14 @@ import './App.css';
 import React from 'react';
 import Header from './components/Header';
 import Home from './sections/Home';
+import About from './sections/About';
 
 function App() {
   return (
     <div>      
       <Header />
       <Home />
-      <section className='about'>
-        <h2 className='section-heading'>
-          About
-        </h2>
-      </section>
+      <About />
       <section className='projects'>
         <h2 className='section-heading'>
           Projects
