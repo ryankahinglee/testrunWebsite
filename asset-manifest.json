@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/ryanleeweb/static/css/main.3b51e745.css",
-    "main.js": "/ryanleeweb/static/js/main.00913041.js",
+    "main.css": "/ryanleeweb/static/css/main.c0245123.css",
+    "main.js": "/ryanleeweb/static/js/main.7aec6a7e.js",
     "static/js/787.bbe01249.chunk.js": "/ryanleeweb/static/js/787.bbe01249.chunk.js",
+    "static/media/DanceProposal.pdf": "/ryanleeweb/static/media/DanceProposal.07b4044f7c4f7226bb40.pdf",
     "index.html": "/ryanleeweb/index.html",
-    "main.3b51e745.css.map": "/ryanleeweb/static/css/main.3b51e745.css.map",
-    "main.00913041.js.map": "/ryanleeweb/static/js/main.00913041.js.map",
+    "main.c0245123.css.map": "/ryanleeweb/static/css/main.c0245123.css.map",
+    "main.7aec6a7e.js.map": "/ryanleeweb/static/js/main.7aec6a7e.js.map",
     "787.bbe01249.chunk.js.map": "/ryanleeweb/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b51e745.css",
-    "static/js/main.00913041.js"
+    "static/css/main.c0245123.css",
+    "static/js/main.7aec6a7e.js"
   ]
 }
