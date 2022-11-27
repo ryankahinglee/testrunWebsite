@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './sections/Home';
 import About from './sections/About';
+import Projects from './sections/Projects';
 
 function App() {
   return (
@@ -10,16 +11,7 @@ function App() {
       <Header />
       <Home />
       <About />
-      <section className='projects'>
-        <h2 className='section-heading'>
-          Projects
-        </h2>
-      </section>
-      <section className='contact'>
-        <h2 className='section-heading'>
-          Contact
-        </h2>
-      </section>
+      <Projects />
       <footer>
 
       </footer>

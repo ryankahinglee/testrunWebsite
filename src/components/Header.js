@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Header () {
+  console.log(document.getElementsByClassName('projects-container')[0]); 
   return (
     <header className='header'>
       <div className='header-container'>
@@ -9,10 +10,29 @@ export default function Header () {
           </p>
         </div>
         <ul className='header-list'>
-          <li className='header-item'>Home</li>
-          <li className='header-item'>About me</li>
-          <li className='header-item'>Projects</li>
-          <li className='header-item'>Contact</li>
+          <li 
+            className='header-item'
+            onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'});}}
+          >Home</li>
+          <li 
+            className='header-item'
+            onClick={() => {window.scrollTo({
+              top: document.getElementsByClassName('about-container')[0].scrollHeight,
+              behavior: 'smooth'
+            })
+            }}
+          >
+            About me</li>
+          <li 
+            className='header-item'
+            onClick={() => {
+              console.log(document.getElementsByClassName('projects-container')[0]);
+              window.scrollTo({
+              top: 3000,
+              behavior: 'smooth'
+            })
+            }}
+          >Projects</li>
         </ul>
       </div>
     </header>

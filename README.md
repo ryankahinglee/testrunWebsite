@@ -7,6 +7,7 @@
 # Packages used
 Shopify/Draggable
 npm install @shopify/draggable --save
+npm install react-pdf
 
 Uninstall via:
 npm uninstall @shopify/draggable --save

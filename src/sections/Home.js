@@ -4,7 +4,6 @@ import { Swappable } from '@shopify/draggable';
 
 export default function Home () {
   const [isCorrect, setCorrect] = React.useState(false);
-  console.log(isCorrect);
   React.useEffect(() => {
     const swappable = new Swappable(document.querySelectorAll('div'), {
       draggable: '.cube-three-side'
@@ -70,7 +69,7 @@ export default function Home () {
           </div>  
         )}
         {isCorrect && (
-          <div className='home-greet visible neon-pink' style={{ width: '60vw' }}>
+          <div className='home-greet visible-slow neon-pink' style={{ width: '60vw' }}>
             Frontend Developer and Backend Engineer
           </div>
         )}
