@@ -17,9 +17,7 @@ export default function WebsiteDetails () {
         </div>
         <div 
           className='repo-button'
-          onClick={() => {
-            
-          }}
+          onClick={() => {window.open('https://github.com/ryankahinglee/Frontend-AirBnB', '_blank')}}
         >
           Github
         </div>

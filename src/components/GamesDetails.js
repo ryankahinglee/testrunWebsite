@@ -13,9 +13,7 @@ export default function GamesDetails () {
         </div>
         <div 
           className='repo-button'
-          onClick={() => {
-            
-          }}
+          onClick={() => {window.open('https://github.com/ryankahinglee/Java-Dungeon', '_blank')}}
         >
           Github
         </div>

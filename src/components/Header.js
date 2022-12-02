@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Header () {
-  console.log(document.getElementsByClassName('projects-container')[0]); 
   return (
     <header className='header'>
       <div className='header-container'>
