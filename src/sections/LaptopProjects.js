@@ -5,7 +5,7 @@ import DanceDetails from '../components/DanceDetails';
 import GamesDetails from '../components/GamesDetails';
 import WebsiteDetails from '../components/WebsiteDetails';
 
-export default function Projects () {
+export default function LaptopProjects () {
 
   const [card, setCard] = React.useState('');
   const getters = {
@@ -39,7 +39,7 @@ export default function Projects () {
   }
   return (
     <CardContext.Provider value = {{getters, setters}}>
-      <section className='projects-container'>
+      <section className='projects-container about-container'>
           <h2 className='section-heading flicker-slower neon-green'>
             Projects
           </h2>

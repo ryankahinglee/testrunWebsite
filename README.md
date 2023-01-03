@@ -12,6 +12,8 @@ npm install react-pdf
 Uninstall via:
 npm uninstall @shopify/draggable --save
 
+Flaticon is made by Mayor Icons from flaticon https://www.flaticon.com/free-icon/menu_4204008?term=menu&related_id=4204008
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

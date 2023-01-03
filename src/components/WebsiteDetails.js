@@ -6,7 +6,7 @@ export default function WebsiteDetails () {
       <div>
         <img className='website-image' src={Image} alt='screenshot of Airbnb website'></img>
       </div>
-      <div>
+      <div className='website-description'>
         <div className='website-text'>
           My first project in <span className='neon-text-light-blue'>React</span> was a pair assignment. We were tasked with designing
           a replica of the AirBnB site. Users could host listings, create bookings and leave reviews after registering their own account.

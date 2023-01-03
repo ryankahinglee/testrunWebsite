@@ -4,7 +4,7 @@ export default function Header () {
   return (
     <header className='header'>
       <div className='header-container'>
-        <div className=''>
+        <div>
           <p className='header-name'>Ryan Kahing Lee
           </p>
         </div>
@@ -27,7 +27,7 @@ export default function Header () {
             onClick={() => {
               console.log(document.getElementsByClassName('projects-container')[0]);
               window.scrollTo({
-              top: 3000,
+              top: 2300,
               behavior: 'smooth'
             })
             }}

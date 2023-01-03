@@ -3,42 +3,63 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './sections/Home';
 import About from './sections/About';
-import Projects from './sections/Projects';
+import LaptopProjects from './sections/LaptopProjects';
+import LaptopHome from './sections/LaptopHome';
+import IpadProjects from './sections/IpadProjects';
+import MobileHeader from './components/MobileHeader';
+import MobileHome from './sections/MobileHome';
+import MobileProjects from './sections/MobileProjects';
 
 function App() {
-  const [mobileView, setMobileView] = React.useState(false);
-  React.useEffect(() => {
-    if (window.innerWidth < 1200 || window.innerHeight < 1050) {
-      setMobileView(true);
-    }
-  }, [])
+  const [viewportSize, setviewportSize] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1200 || window.innerHeight < 1050) {
-        setMobileView(true);
-      } else if (window.innerWidth >= 1200 && window.innerHeight >= 1050) {
-        setMobileView(false);
-      }
+      setviewportSize(window.innerWidth);
     }
     window.addEventListener('resize', handleResize);
-
     return () => window.removeEventListener('resize', handleResize);
   }, [])
+
+  const [section, setSection] = React.useState('Home');
+
   return (
     <div>    
-      {!mobileView && (
+      {viewportSize >= 1470 && (
         <div>
           <Header />
           <Home />
           <About />
-          <Projects />
+          <LaptopProjects />
           <footer>
           </footer>
         </div>
       )}  
-      {mobileView && (
-        <div></div>
+      {viewportSize >= 1060 && viewportSize < 1470 && (
+        <div>
+          <Header />
+          <LaptopHome />
+          <About />
+          <IpadProjects />
+          <footer>
+          </footer>
+        </div>
+      )}
+      {viewportSize < 1060 && (
+        <div>
+          <MobileHeader setSection={setSection}/>
+          {section === 'Home' && (
+            <MobileHome />
+          )}
+          {section === 'About' && (
+            <About />
+          )}
+          {section === 'Projects' && (
+            <MobileProjects />
+          )}
+          <footer>
+          </footer>
+        </div>
       )}
     </div>
   );

@@ -20,7 +20,7 @@ export default function About () {
             Check out my projects and see how I've incorporated them in my journey to becoming a full-fledged programmer. 
 
             <br /><br />
-            <span className='about-text-ps'>PS: This is my solo first website, designing it really pushed my limits!</span>
+            <span className='about-text-ps'>PS: This is my first solo website, designing it really pushed my limits!</span>
           </p>
         </div>
         <div className='about-skills'>
