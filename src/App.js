@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div>    
-      {viewportSize >= 1470 && (
+      {/* {viewportSize >= 1470 && (
         <div>
           <Header />
           <Home />
@@ -34,7 +34,7 @@ function App() {
           <footer>
           </footer>
         </div>
-      )}  
+      )}   */}
       {viewportSize >= 1060 && viewportSize < 1470 && (
         <div>
           <Header />
