@@ -23,29 +23,25 @@ function App() {
 
   const [section, setSection] = React.useState('Home');
 
-  // Reference to an output container, use 'pre' styling for JSON output
-  var output = document.createElement('pre');
-  document.body.appendChild(output);
-
-  // Reference to native method(s)
-  var oldLog = console.log;
-
-  console.log = function( ...items ) {
-
-      // Call native method first
-      oldLog.apply(this,items);
-
-      // Use JSON to transform objects, all others display normally
-      items.forEach( (item,i)=>{
-          items[i] = (typeof item === 'object' ? JSON.stringify(item,null,4) : item);
-      });
-      output.innerHTML += items.join(' ') + '<br />';
-
+  if (window.console) console = { 
+    log: function(){
+        var output='',
+            console=document.getElementById('console');
+        for (var i=0;i<arguments.length;i++) {
+            output+=arguments[i]+' ';
+        }
+        console.innerText+=output+"\n";
+    }
   };
 
-
   return (
-    <div>    
+    <div>   
+      <head>
+        <script src="https://gist.github.com/ryankahinglee/3c0a1cccc1036e275176352afbd220cf.js"></script> 
+        <base href="https://ryankahinglee.github.io/ryanleeweb/" target="_blank"/>  
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      </head>
+      <div id="console"></div>
       {viewportSize >= 1470 && (
         <div>
           <Header />
