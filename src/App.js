@@ -42,7 +42,8 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </head>
       <div id="console"></div>
-      {viewportSize >= 1470 && (
+      <p>Test test test</p> 
+      {/* {viewportSize >= 1470 && (
         <div>
           <Header />
           <Home />
@@ -77,7 +78,7 @@ function App() {
           <footer>
           </footer>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
