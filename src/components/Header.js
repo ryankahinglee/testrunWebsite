@@ -1,11 +1,18 @@
 import React from 'react';
+import Resume from '../Resume.pdf';
 
 export default function Header () {
+  function onResumeClick() {
+    window.open(Resume);
+  }
+
   return (
     <header className='header'>
       <div className='header-container'>
         <div>
-          <p className='header-name'>Ryan Kahing Lee
+          <p className='header-name'
+            onClick ={onResumeClick}
+          >{Resume}
           </p>
         </div>
         <ul className='header-list'>
