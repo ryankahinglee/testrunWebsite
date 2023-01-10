@@ -23,25 +23,8 @@ function App() {
 
   const [section, setSection] = React.useState('Home');
 
-  if (window.console) console = { 
-    log: function(){
-        var output='',
-            console=document.getElementById('console');
-        for (var i=0;i<arguments.length;i++) {
-            output+=arguments[i]+' ';
-        }
-        console.innerText+=output+"\n";
-    }
-  };
-
   return (
     <div>   
-      <head>
-        <script src="https://gist.github.com/ryankahinglee/3c0a1cccc1036e275176352afbd220cf.js"></script> 
-        <base href="https://ryankahinglee.github.io/ryanleeweb/" target="_blank"/>  
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      </head>
-      <div id="console"></div>
       {viewportSize >= 1470 && (
         <div>
           <Header />

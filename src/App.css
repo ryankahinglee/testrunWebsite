@@ -57,6 +57,7 @@ body {
   border-bottom: 2px solid #FE8DFF;
   box-shadow: 0px 0px 20px 5px #FE8DFF;
 }
+
 .header-name {
   font-size: 25px;
   letter-spacing: 2px;
@@ -64,9 +65,20 @@ body {
   text-shadow:
     0 0 15px #fff;
 }
+
+.header-name:hover {
+  
+  text-shadow:
+    0 0 15px #fff,
+    0 0 30px #fff,
+    0 0 45px #fff,
+    0 0 65px #fff;
+}
+
 .header-list {
   margin: 0;
 }
+
 .header-item {
   display: inline;
   position: relative;
@@ -77,14 +89,14 @@ body {
   color: #FE8DFF;
 }
 
-.header-item:hover {
+.header-button:hover {
   color: black;
   background-color: #FE8DFF;
   box-shadow: 0 0 30px #FE8DFF;
   transition-delay: 0.25s;
 }
 
-.header-item:before {
+.header-button:before {
   content: ' ';
   position: absolute;
   top: 0;
@@ -96,12 +108,12 @@ body {
   transition: 0.25s;
 }
 
-.header-item:hover:before {
+.header-button:hover:before {
   width: 90%;
   height: 90%;
 }
 
-.header-item:after {
+.header-button:after {
   content: ' ';
   position: absolute;
   bottom: 0;
@@ -113,7 +125,7 @@ body {
   transition: 0.25s;
 }
 
-.header-item:hover:after{
+.header-button:hover:after{
   width: 90%;
   height: 90%;
 }
@@ -700,7 +712,7 @@ body {
 
   .projects-container {
     height: 2700px;
-    padding: 100px 0 0 0;
+    padding: 130px 0 0 0;
     justify-content: center;
   }
   .project-text {
@@ -746,7 +758,7 @@ body {
 
   .projects-container {
     height: 2500px;
-    padding: 70px 0 0 0;
+    padding: 12 0px 0 0 0;
     justify-content: center;
   }
 

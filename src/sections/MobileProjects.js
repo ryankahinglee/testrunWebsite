@@ -78,13 +78,13 @@ export default function MobileProjects () {
       </div>
       <div>
         <img className='website-image' src={WebsiteImage} alt='screenshot of Airbnb website'></img>
-        <div 
+      </div>
+      <div 
           className='repo-button'
           onClick={() => {window.open('https://github.com/ryankahinglee/Frontend-AirBnB', '_blank')}}
         >
           Github
         </div>
-    </div>
       <div>
         <div className='neon-text-light-blue project-row-title'>
           Games
@@ -97,6 +97,12 @@ export default function MobileProjects () {
       <div className='game-image-display'>
         <img className='game-image' src={GameImage} alt='Screenshot of Game' />
       </div>
+      <div 
+          className='repo-button'
+          onClick={() => {window.open('https://github.com/ryankahinglee/Java-Dungeon', '_blank')}}
+        >
+          Github
+        </div>
     </section>
   )
 }

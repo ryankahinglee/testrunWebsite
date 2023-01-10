@@ -98,6 +98,12 @@ export default function IpadProjects () {
             A dungeon-crawler 2D game in Java. Players experiences several core attributes of dungeon games such as finding items, 
             fighting monsters and collecting coins.
           </div>
+          <div 
+            className='repo-button'
+            onClick={() => {window.open('https://github.com/ryankahinglee/Java-Dungeon', '_blank')}}
+          >
+            Github
+          </div>
         </div>
         <div className='game-image-display'>
           <img className='game-image' src={GameImage} alt='Screenshot of Game' />

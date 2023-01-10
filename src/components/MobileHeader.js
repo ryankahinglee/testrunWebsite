@@ -2,13 +2,18 @@ import React from 'react';
 import MenuIcon from '../menu.png';
 
 export default function Header ({setSection}) {
-
+  
   const [open, setOpen] = React.useState(false)
+  function onResumeClick() {
+    window.open("https://docs.google.com/document/d/1lNup195tNhaTB8jpgf-9Ztg6U2jkthyK/edit?usp=sharing&ouid=112638218753683549426&rtpof=true&sd=true");
+  }
+
   return (
     <header className='header'>
       <div className='header-container'>
         <div className=''>
-          <p className='header-name'>Ryan Kahing Lee
+          <p className='header-name flicker-slowest'  
+            onClick ={onResumeClick}>Ryan Kahing Lee
           </p>
         </div>
         <div>
