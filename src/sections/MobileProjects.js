@@ -1,6 +1,4 @@
 import React from 'react';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
 import WebsiteImage from '../airbnb.screenshot.PNG';
 import GameImage from '../game-screenshot.png'
 import DanceImage from '../Dance proposal snippet.PNG';
