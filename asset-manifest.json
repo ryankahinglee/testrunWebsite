@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/ryanleeweb/static/css/main.c8b14ca4.css",
-    "main.js": "/ryanleeweb/static/js/main.70e5613d.js",
+    "main.css": "/ryanleeweb/static/css/main.f3f088f0.css",
+    "main.js": "/ryanleeweb/static/js/main.f8d6655e.js",
     "static/js/787.bbe01249.chunk.js": "/ryanleeweb/static/js/787.bbe01249.chunk.js",
     "static/media/DanceProposal.pdf": "/ryanleeweb/static/media/DanceProposal.07b4044f7c4f7226bb40.pdf",
     "static/media/airbnb.screenshot.PNG": "/ryanleeweb/static/media/airbnb.screenshot.89b9083afa141302eaf4.PNG",
     "static/media/game-screenshot.png": "/ryanleeweb/static/media/game-screenshot.8525abc1a8db2942761b.png",
+    "static/media/Dance proposal snippet.PNG": "/ryanleeweb/static/media/Dance proposal snippet.a9846ec3d075bc39c2b9.PNG",
     "index.html": "/ryanleeweb/index.html",
-    "main.c8b14ca4.css.map": "/ryanleeweb/static/css/main.c8b14ca4.css.map",
-    "main.70e5613d.js.map": "/ryanleeweb/static/js/main.70e5613d.js.map",
+    "main.f3f088f0.css.map": "/ryanleeweb/static/css/main.f3f088f0.css.map",
+    "main.f8d6655e.js.map": "/ryanleeweb/static/js/main.f8d6655e.js.map",
     "787.bbe01249.chunk.js.map": "/ryanleeweb/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8b14ca4.css",
-    "static/js/main.70e5613d.js"
+    "static/css/main.f3f088f0.css",
+    "static/js/main.f8d6655e.js"
   ]
 }
