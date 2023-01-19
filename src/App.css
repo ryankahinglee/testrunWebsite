@@ -711,8 +711,8 @@ body {
   }
 
   .projects-container {
-    height: 2700px;
-    padding: 130px 0 0 0;
+    height: 2600px;
+    padding: 80px 0 0 0;
     justify-content: center;
   }
   .project-text {
@@ -751,14 +751,19 @@ body {
   font-size: 80px;
 }
 
+.dance-image {
+  height: 500px;
+  width: calc(300px + 8vw);
+}
+
 @media only screen and (max-width: 600px) {
   .home-background {
     padding-top: 4rem;
   }
 
   .projects-container {
-    height: 2500px;
-    padding: 12 0px 0 0 0;
+    height: 2400px;
+    padding: 30px 0px 0 0;
     justify-content: center;
   }
 
@@ -787,8 +792,8 @@ body {
   }
 
   .website-image {
-    height: 250px;
-    width: calc(300px + 8vw);
+    height: 220px;
+    width: calc(320px + 20vw);
   }
 
   .game-image-display {
